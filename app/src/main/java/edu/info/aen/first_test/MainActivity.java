@@ -16,6 +16,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     private TextView cptTv;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,5 +60,12 @@ public class MainActivity extends AppCompatActivity {
                 // Invoke the superclass to handle it.
                 return super.onOptionsItemSelected(item);
 
-        }    }
+        }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(android.view.Menu menu) {
+        getMenuInflater().inflate(R.menu.app_bar_menu, menu);
+        return true;
+    }
 }
