@@ -8,4 +8,5 @@
     <string name="title_activity_settings">Paramètres</string>
     <string name="action_settings">Paramètres</string>
     <string name="action_reset">Réinitialiser l\'application</string>
+    <string name="second_btn_return">Retour</string>
 </resources>

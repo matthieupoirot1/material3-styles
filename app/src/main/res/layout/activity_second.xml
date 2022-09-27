@@ -6,11 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".SecondActivity">
 
+    <include layout="@layout/first_app_toolbar" />
+
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="@string/second_btn_return"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
