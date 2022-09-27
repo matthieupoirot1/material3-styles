@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.FirstTest" parent="Theme.AppCompat.NoActionBar">
+    <style name="Theme.FirstTest" parent="Theme.Material3.Dark.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -12,12 +12,12 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-        <item name="android:windowBackground">@color/material_dynamic_neutral20</item>
-        <item name="buttonStyle">@style/MyCustomButton</item>
+<!--        <item name="android:windowBackground">@color/material_dynamic_neutral20</item>-->
+<!--        <item name="buttonStyle">@style/MyCustomButton</item>-->
     </style>
 
-    <style name="MyCustomButton" parent="Widget.AppCompat.Button">
-        <item name="android:textColor">?attr/colorOnPrimary</item>
-        <item name="android:backgroundTint">?attr/colorPrimary</item>
-    </style>
+<!--    <style name="MyCustomButton" parent="Widget.AppCompat.Button">-->
+<!--        <item name="android:textColor">?attr/colorOnPrimary</item>-->
+<!--        <item name="android:backgroundTint">?attr/colorPrimary</item>-->
+<!--    </style>-->
 </resources>
