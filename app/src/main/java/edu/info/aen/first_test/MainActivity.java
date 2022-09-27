@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.app.ActionBar;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         Button lessBtn = findViewById(R.id.btn_less);
         Button resetBtn = findViewById(R.id.btn_reset);
         Button addBtn = findViewById(R.id.btn_add);
+        Button settingsBtn = findViewById(R.id.main_btn_settings);
 
         lessBtn.setOnClickListener(v -> {
             cptTv.setText(String.valueOf(Integer.parseInt(cptTv.getText().toString()) - 1));
@@ -40,6 +42,12 @@ public class MainActivity extends AppCompatActivity {
 
         addBtn.setOnClickListener(v -> {
             cptTv.setText(String.valueOf(Integer.parseInt(cptTv.getText().toString()) + 1));
+        });
+        settingsBtn.setOnClickListener(v -> {
+            Intent intentFirstToSecond =
+                    new Intent(this,
+                            SecondActivity.class);
+            startActivity(intentFirstToSecond);
         });
     }
 
