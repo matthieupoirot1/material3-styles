@@ -9,15 +9,39 @@
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
+        <item name="colorOnSurface">@color/white</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
 <!--        <item name="android:windowBackground">@color/material_dynamic_neutral20</item>-->
-<!--        <item name="buttonStyle">@style/MyCustomButton</item>-->
+        <item name="materialButtonStyle">@style/Widget.FirstApp.Button</item>
     </style>
 
-<!--    <style name="MyCustomButton" parent="Widget.AppCompat.Button">-->
-<!--        <item name="android:textColor">?attr/colorOnPrimary</item>-->
-<!--        <item name="android:backgroundTint">?attr/colorPrimary</item>-->
-<!--    </style>-->
+    <style name="Widget.FirstApp.Button" parent="Widget.Material3.Button">
+        <item name="shapeAppearanceOverlay">@style/maShape</item>
+    </style>
+    <style name="maShape" parent="">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">0dp</item>
+    </style>
+
+    <style name="maShapeLeft" parent="maShape">
+        <item name="cornerFamilyTopLeft">cut</item>
+        <item name="cornerSizeTopLeft">16dp</item>
+    </style>
+
+    <style name="maShapeRight" parent="maShape">
+        <item name="cornerFamilyTopRight">cut</item>
+        <item name="cornerSizeTopRight">16dp</item>
+    </style>
+
+    <style name="MyCustomResetButton" parent="Widget.FirstApp.Button">
+        <item name="android:backgroundTint">@color/red_500</item>
+    </style>
+    <style name="Widget.FirstApp.Button.LeftMost" parent="Widget.FirstApp.Button">
+        <item name="shapeAppearanceOverlay">@style/maShapeLeft</item>
+    </style>
+    <style name="Widget.FirstApp.Button.RightMost" parent="Widget.FirstApp.Button">
+        <item name="shapeAppearanceOverlay">@style/maShapeRight</item>
+    </style>
 </resources>

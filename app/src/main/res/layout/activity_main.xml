@@ -47,7 +47,8 @@
             android:id="@+id/btn_less"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/main_btn_less" />
+            android:text="@string/main_btn_less"
+            style="@style/Widget.FirstApp.Button.LeftMost" />
 
         <Space
             android:layout_width="10dp"
@@ -58,7 +59,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/main_btn_reset"
-            />
+            style="@style/MyCustomResetButton"
+        />
 
         <Space
             android:layout_width="10dp"
@@ -68,6 +70,7 @@
             android:id="@+id/btn_add"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/main_btn_add" />
+            android:text="@string/main_btn_add"
+            style="@style/Widget.FirstApp.Button.RightMost" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

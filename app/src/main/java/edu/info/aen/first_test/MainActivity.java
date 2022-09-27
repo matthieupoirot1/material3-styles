@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         addBtn.setOnClickListener(v -> {
-            cptTv.setText(String.valueOf(Integer.parseInt(cptTv.getText().toString()) - 1));
+            cptTv.setText(String.valueOf(Integer.parseInt(cptTv.getText().toString()) + 1));
         });
     }
 
