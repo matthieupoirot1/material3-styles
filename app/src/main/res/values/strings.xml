@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">First-Test</string>
+    <string name="activity_main_tv_main_text">Hello World !</string>
+    <string name="main_btn_less">-1</string>
+    <string name="main_btn_reset">Reset</string>
+    <string name="main_btn_add">+1</string>
+    <string name="main_tv_nb">0</string>
+    <string name="title_activity_settings">Paramètres</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="action_reset">Réinitialiser l\'application</string>
+</resources>
