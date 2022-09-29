@@ -9,4 +9,7 @@
     <string name="action_settings">Paramètres</string>
     <string name="action_reset">Réinitialiser l\'application</string>
     <string name="second_btn_return">Retour</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="top_fragment">Je suis au top</string>
+    <string name="bot_fragment">Je suis au bot</string>
 </resources>

@@ -58,7 +58,10 @@ public class MainActivity extends AppCompatActivity {
         Log.d("DEBUGAPPBAR", "onOptionsItemSelected: " + item.getItemId());
         switch (item.getItemId()) {
             case R.id.action_settings:
-                // User chose the "Settings" item, show the app settings UI...
+                    Intent intentFirstToSettings =
+                            new Intent(this,
+                                    SettingsActivity.class);
+                    startActivity(intentFirstToSettings);
                 return true;
 
             case R.id.action_reset:
