@@ -34,16 +34,16 @@ public class MainActivity extends AppCompatActivity {
         Button settingsBtn = findViewById(R.id.main_btn_settings);
 
         lessBtn.setOnClickListener(v -> {
-            cptTv.setText(String.valueOf(Integer.parseInt(cptTv.getText().toString()) - 1));
+            if (Integer.parseInt(cptTv.getText().toString()) > 0) {
+                cptTv.setText(String.valueOf(Integer.parseInt(cptTv.getText().toString()) - 1));
+            }
         });
 
-        resetBtn.setOnClickListener(v -> {
-            cptTv.setText("0");
-        });
+        resetBtn.setOnClickListener(v -> cptTv.setText("0"));
 
-        addBtn.setOnClickListener(v -> {
-            cptTv.setText(String.valueOf(Integer.parseInt(cptTv.getText().toString()) + 1));
-        });
+        addBtn.setOnClickListener(v -> cptTv.setText(String.valueOf(Integer.parseInt(cptTv.getText().toString()) + 1)));
+
+
         settingsBtn.setOnClickListener(v -> {
             Intent intentFirstToSecond =
                     new Intent(this,
