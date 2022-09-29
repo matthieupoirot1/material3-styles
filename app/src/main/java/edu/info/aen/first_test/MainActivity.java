@@ -14,6 +14,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.appbar.MaterialToolbar;
+
 import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
@@ -25,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        MaterialToolbar myToolbar = findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
         this.cptTv = findViewById(R.id.tv_cpt);
         Button lessBtn = findViewById(R.id.btn_less);
