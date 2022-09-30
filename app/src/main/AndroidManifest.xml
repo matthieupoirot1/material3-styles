@@ -12,6 +12,9 @@
         android:theme="@style/Theme.FirstTest"
         tools:targetApi="32">
         <activity
+            android:name=".RecyclerViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -23,7 +26,7 @@
         <activity
             android:name=".SecondActivity"
             android:exported="false"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
@@ -31,7 +34,7 @@
         <activity
             android:name=".ThirdActivity"
             android:exported="false"
-            android:parentActivityName=".SecondActivity" >
+            android:parentActivityName=".SecondActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".SecondActivity" />

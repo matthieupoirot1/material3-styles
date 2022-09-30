@@ -9,4 +9,30 @@
     <string name="action_settings">Paramètres</string>
     <string name="action_reset">Réinitialiser l\'application</string>
     <string name="second_btn_return">Retour</string>
+    <string name="main_btn_recycler_intent">RecyclerView</string>
+    <string name="rv_item_image_cont_desc">Image of the color</string>
+    <string-array name="couleur">
+        <item>rouge</item>
+        <item>vert</item>
+        <item>bleu</item>
+        <item>jaune</item>
+        <item>orange</item>
+        <item>violet</item>
+        <item>rose</item>
+        <item>marron</item>
+        <item>cyan</item>
+        <item>gris</item>
+    </string-array>
+    <string-array name="description">
+        <item>Lorem ipsum dolor si amet</item>
+        <item>Lorem ipsum dolor si amet</item>
+        <item>Lorem ipsum dolor si amet</item>
+        <item>Lorem ipsum dolor si amet</item>
+        <item>Lorem ipsum dolor si amet</item>
+        <item>Lorem ipsum dolor si amet</item>
+        <item>Lorem ipsum dolor si amet</item>
+        <item>Lorem ipsum dolor si amet</item>
+        <item>Lorem ipsum dolor si amet</item>
+        <item>Lorem ipsum dolor si amet</item>
+    </string-array>
 </resources>

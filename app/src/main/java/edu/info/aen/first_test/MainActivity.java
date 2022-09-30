@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         Button resetBtn = findViewById(R.id.btn_reset);
         Button addBtn = findViewById(R.id.btn_add);
         Button settingsBtn = findViewById(R.id.main_btn_settings);
+        Button recyclerViewBtn = findViewById(R.id.main_btn_recycler_view);
 
         lessBtn.setOnClickListener(v -> {
             cptTv.setText(String.valueOf(Integer.parseInt(cptTv.getText().toString()) - 1));
@@ -51,6 +52,13 @@ public class MainActivity extends AppCompatActivity {
                     new Intent(this,
                             SecondActivity.class);
             startActivity(intentFirstToSecond);
+        });
+
+        recyclerViewBtn.setOnClickListener(v -> {
+            Intent intentFirstToRecyclerView =
+                    new Intent(this,
+                            RecyclerViewActivity.class);
+            startActivity(intentFirstToRecyclerView);
         });
     }
 
