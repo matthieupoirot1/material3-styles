@@ -1,6 +1,7 @@
 package edu.info.aen.first_test.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import edu.info.aen.first_test.R;
+import edu.info.aen.first_test.RvDetailActivity;
 
 public class CouleursAdapter extends RecyclerView.Adapter<CouleursAdapter.CouleurViewHolder> {
 
@@ -40,6 +42,14 @@ public class CouleursAdapter extends RecyclerView.Adapter<CouleursAdapter.Couleu
         holder.title.setText(titre[position]);
         holder.description.setText(description[position]);
         holder.image.setImageResource(images[position]);
+        holder.image.setOnClickListener(v -> {
+            int pos = holder.getAdapterPosition();
+            Intent intent = new Intent(ctx, RvDetailActivity.class);
+            intent.putExtra("title", titre[pos]);
+            intent.putExtra("description", description[pos]);
+            intent.putExtra("image", images[pos]);
+            ctx.startActivity(intent);
+        });
     }
 
     @Override

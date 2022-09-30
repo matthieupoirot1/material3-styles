@@ -12,6 +12,9 @@
         android:theme="@style/Theme.FirstTest"
         tools:targetApi="32">
         <activity
+            android:name=".RvDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".RecyclerViewActivity"
             android:exported="false" />
         <activity
