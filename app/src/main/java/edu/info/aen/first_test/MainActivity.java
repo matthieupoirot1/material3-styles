@@ -18,43 +18,40 @@ import com.google.android.material.appbar.MaterialToolbar;
 
 import java.util.Objects;
 
+import edu.info.aen.first_test.databinding.ActivityMainBinding;
+
 public class MainActivity extends AppCompatActivity {
 
-    private TextView cptTv;
-
+    private ActivityMainBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        View view = binding.getRoot();
+        setContentView(view);
 
         MaterialToolbar myToolbar = findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
-        this.cptTv = findViewById(R.id.tv_cpt);
-        Button lessBtn = findViewById(R.id.btn_less);
-        Button resetBtn = findViewById(R.id.btn_reset);
-        Button addBtn = findViewById(R.id.btn_add);
-        Button settingsBtn = findViewById(R.id.main_btn_settings);
-        Button recyclerViewBtn = findViewById(R.id.main_btn_recycler_view);
 
-        lessBtn.setOnClickListener(v -> {
-            cptTv.setText(String.valueOf(Integer.parseInt(cptTv.getText().toString()) - 1));
+        this.binding.btnLess.setOnClickListener(v -> {
+            this.binding.tvCpt.setText(String.valueOf(Integer.parseInt(this.binding.tvCpt.getText().toString()) - 1));
         });
 
-        resetBtn.setOnClickListener(v -> {
-            cptTv.setText("0");
+        this.binding.btnReset.setOnClickListener(v -> {
+            this.binding.tvCpt.setText("0");
         });
 
-        addBtn.setOnClickListener(v -> {
-            cptTv.setText(String.valueOf(Integer.parseInt(cptTv.getText().toString()) + 1));
+        this.binding.btnAdd.setOnClickListener(v -> {
+            this.binding.tvCpt.setText(String.valueOf(Integer.parseInt(this.binding.tvCpt.getText().toString()) + 1));
         });
-        settingsBtn.setOnClickListener(v -> {
+        this.binding.mainBtnSettings.setOnClickListener(v -> {
             Intent intentFirstToSecond =
                     new Intent(this,
                             SecondActivity.class);
             startActivity(intentFirstToSecond);
         });
 
-        recyclerViewBtn.setOnClickListener(v -> {
+        this.binding.mainBtnRecyclerView.setOnClickListener(v -> {
             Intent intentFirstToRecyclerView =
                     new Intent(this,
                             RecyclerViewActivity.class);
