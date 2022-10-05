@@ -18,6 +18,8 @@ import com.google.android.material.appbar.MaterialToolbar;
 
 import java.util.Objects;
 
+import edu.info.aen.first_test.books.BookRecyclerActivity;
+import edu.info.aen.first_test.databinding.ActivityBookRecyclerBinding;
 import edu.info.aen.first_test.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
@@ -56,6 +58,13 @@ public class MainActivity extends AppCompatActivity {
                     new Intent(this,
                             RecyclerViewActivity.class);
             startActivity(intentFirstToRecyclerView);
+        });
+
+        this.binding.mainActivitBtnBookRv.setOnClickListener(v -> {
+            Intent intentFirstToBookRecyclerView =
+                    new Intent(this,
+                            BookRecyclerActivity.class);
+            startActivity(intentFirstToBookRecyclerView);
         });
     }
 

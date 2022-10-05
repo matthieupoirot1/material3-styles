@@ -11,6 +11,10 @@
     <string name="second_btn_return">Retour</string>
     <string name="main_btn_recycler_intent">RecyclerView</string>
     <string name="rv_item_image_cont_desc">Image of the color</string>
+    <string name="book_rv_et_auteur">Auteur</string>
+    <string name="book_rv_et_titre">Titre</string>
+    <string name="book_rv_btn_add">Ajouter</string>
+    <string name="rv_item_book_default_text">Texte par défaut</string>
     <string-array name="couleur">
         <item>rouge</item>
         <item>vert</item>

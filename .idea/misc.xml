@@ -3,12 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Matthieu/Desktop/FirstTest/app/src/main/res/layout/activity_book_recycler.xml" value="0.1" />
         <entry key="..\:/Users/Matthieu/Desktop/FirstTest/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/Matthieu/Desktop/FirstTest/app/src/main/res/layout/activity_recycler_view.xml" value="0.1" />
         <entry key="..\:/Users/Matthieu/Desktop/FirstTest/app/src/main/res/layout/activity_rv_detail.xml" value="0.15307971014492755" />
         <entry key="..\:/Users/Matthieu/Desktop/FirstTest/app/src/main/res/layout/activity_second.xml" value="0.1" />
         <entry key="..\:/Users/Matthieu/Desktop/FirstTest/app/src/main/res/layout/activity_third.xml" value="0.1" />
         <entry key="..\:/Users/Matthieu/Desktop/FirstTest/app/src/main/res/layout/first_app_toolbar.xml" value="0.1" />
+        <entry key="..\:/Users/Matthieu/Desktop/FirstTest/app/src/main/res/layout/rv_book_item.xml" value="0.1" />
         <entry key="..\:/Users/Matthieu/Desktop/FirstTest/app/src/main/res/layout/rv_item.xml" value="0.12409420289855072" />
         <entry key="..\:/Users/Matthieu/Desktop/FirstTest/app/src/main/res/layout/settings_activity.xml" value="0.1" />
         <entry key="..\:/Users/Matthieu/Desktop/FirstTest/app/src/main/res/menu/app_bar_menu.xml" value="0.1814814814814815" />
