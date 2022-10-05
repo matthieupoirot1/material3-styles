@@ -42,7 +42,7 @@ public class BookRecyclerActivity extends AppCompatActivity {
         BookAdapter adapter = new BookAdapter(this, books);
         adapter.setListener( (rating, modBookPosition) -> {
             books.get(modBookPosition).setNote(rating);
-            adapter.notifyItemChanged(modBookPosition);
+            binding.bookActivityRv.post(() -> adapter.notifyItemChanged(modBookPosition));
             this.lastModifiedBook = books.get(modBookPosition);
             this.binding.activityBookTvLastModified.setText("Last modified book : " + this.lastModifiedBook.getTitle() + " Note : " + this.lastModifiedBook.getNote());
         });
