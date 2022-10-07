@@ -18,6 +18,11 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.BookViewHolder
     private final List<Book> books;
     private Context ctx;
 
+    /**
+     * This method delegate the creation of the onClickListener to the calling class.
+     * The given implementation of {@link RatingBarClickListener} will be launched when rating is clicked.
+     * @param listener interface to be implemented by either anonymous inner class or lambda
+     */
     public void setListener(RatingBarClickListener listener) {
         this.listener = listener;
     }

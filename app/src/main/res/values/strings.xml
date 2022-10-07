@@ -39,4 +39,6 @@
         <item>Lorem ipsum dolor si amet</item>
         <item>Lorem ipsum dolor si amet</item>
     </string-array>
+    <string name="book_activity_last_modified_book">Dernier Livre modifié : %1$s | Note : %2$.1f</string>
+    <string name="book_activity_last_modified_book_default">Cliquez sur un livre !</string>
 </resources>
