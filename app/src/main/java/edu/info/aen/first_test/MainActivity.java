@@ -21,8 +21,9 @@ import java.util.Objects;
 import edu.info.aen.first_test.books.BookRecyclerActivity;
 import edu.info.aen.first_test.databinding.ActivityBookRecyclerBinding;
 import edu.info.aen.first_test.databinding.ActivityMainBinding;
+import edu.info.aen.first_test.supertype.CustomActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends CustomActivity<ActivityMainBinding> {
 
     private ActivityMainBinding binding;
     @Override
@@ -66,6 +67,11 @@ public class MainActivity extends AppCompatActivity {
                             BookRecyclerActivity.class);
             startActivity(intentFirstToBookRecyclerView);
         });
+    }
+
+    @Override
+    protected void initBinding() {
+        this.binding = ActivityMainBinding.inflate(getLayoutInflater());
     }
 
     @Override

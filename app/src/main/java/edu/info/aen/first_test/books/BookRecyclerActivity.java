@@ -16,32 +16,27 @@ import edu.info.aen.first_test.R;
 import edu.info.aen.first_test.books.adapter.BookAdapter;
 import edu.info.aen.first_test.books.viewmodel.BookViewModel;
 import edu.info.aen.first_test.databinding.ActivityBookRecyclerBinding;
+import edu.info.aen.first_test.supertype.CustomActivity;
 
-public class BookRecyclerActivity extends AppCompatActivity {
-
-    ActivityBookRecyclerBinding binding;
+public class BookRecyclerActivity extends CustomActivity<ActivityBookRecyclerBinding> {
     BookViewModel bookViewModel;
     private BookAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityBookRecyclerBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
         this.bookViewModel = new ViewModelProvider(this).get(BookViewModel.class);
         this.updateLastModifiedBookViewFromVM();
-        MaterialToolbar ViewToolbar = findViewById(R.id.my_toolbar);
-        setSupportActionBar(ViewToolbar);
-        ActionBar toolbar = getSupportActionBar();
-        if (toolbar != null) {
-            toolbar.setDisplayHomeAsUpEnabled(true);
-            toolbar.setTitle("Settings");
-        }
         this.adapter = new BookAdapter(this, this.bookViewModel.getBooks());
         this.adapter.setListener(this::onClickSetRating);
         binding.bookActivityRv.setAdapter(adapter);
         binding.bookActivityRv.setLayoutManager(new LinearLayoutManager(this));
         binding.bookActivityBtnAdd.setOnClickListener(this::onClickAddBook);
+    }
+
+    @Override
+    protected void initBinding() {
+        this.binding = ActivityBookRecyclerBinding.inflate(getLayoutInflater());
     }
 
     /**
