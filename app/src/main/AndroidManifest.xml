@@ -12,11 +12,15 @@
         android:theme="@style/Theme.FirstTest"
         tools:targetApi="32">
         <activity
+            android:name=".livedata.LiveDataActivity"
+            android:exported="false" />
+        <activity
             android:name=".books.BookRecyclerActivity"
-            android:exported="false" android:parentActivityName=".MainActivity">
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".MainActivity" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".RvDetailActivity"

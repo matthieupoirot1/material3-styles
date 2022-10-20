@@ -21,6 +21,7 @@ import java.util.Objects;
 import edu.info.aen.first_test.books.BookRecyclerActivity;
 import edu.info.aen.first_test.databinding.ActivityBookRecyclerBinding;
 import edu.info.aen.first_test.databinding.ActivityMainBinding;
+import edu.info.aen.first_test.livedata.LiveDataActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,17 +36,11 @@ public class MainActivity extends AppCompatActivity {
         MaterialToolbar myToolbar = findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
 
-        this.binding.btnLess.setOnClickListener(v -> {
-            this.binding.tvCpt.setText(String.valueOf(Integer.parseInt(this.binding.tvCpt.getText().toString()) - 1));
-        });
+        this.binding.btnLess.setOnClickListener(v -> this.binding.tvCpt.setText(String.valueOf(Integer.parseInt(this.binding.tvCpt.getText().toString()) - 1)));
 
-        this.binding.btnReset.setOnClickListener(v -> {
-            this.binding.tvCpt.setText("0");
-        });
+        this.binding.btnReset.setOnClickListener(v -> this.binding.tvCpt.setText("0"));
 
-        this.binding.btnAdd.setOnClickListener(v -> {
-            this.binding.tvCpt.setText(String.valueOf(Integer.parseInt(this.binding.tvCpt.getText().toString()) + 1));
-        });
+        this.binding.btnAdd.setOnClickListener(v -> this.binding.tvCpt.setText(String.valueOf(Integer.parseInt(this.binding.tvCpt.getText().toString()) + 1)));
         this.binding.mainBtnSettings.setOnClickListener(v -> {
             Intent intentFirstToSecond =
                     new Intent(this,
@@ -65,6 +60,13 @@ public class MainActivity extends AppCompatActivity {
                     new Intent(this,
                             BookRecyclerActivity.class);
             startActivity(intentFirstToBookRecyclerView);
+        });
+
+        this.binding.mainBtnGotoLivedata.setOnClickListener(v -> {
+            Intent intentFirstToLiveData =
+                    new Intent(this,
+                            LiveDataActivity.class);
+            startActivity(intentFirstToLiveData);
         });
     }
 

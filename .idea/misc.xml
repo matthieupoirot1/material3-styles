@@ -4,12 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Matthieu/Desktop/FirstTest/app/src/main/res/layout/activity_book_recycler.xml" value="0.1" />
+        <entry key="..\:/Users/Matthieu/Desktop/FirstTest/app/src/main/res/layout/activity_live_data.xml" value="0.264" />
         <entry key="..\:/Users/Matthieu/Desktop/FirstTest/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/Matthieu/Desktop/FirstTest/app/src/main/res/layout/activity_recycler_view.xml" value="0.1" />
         <entry key="..\:/Users/Matthieu/Desktop/FirstTest/app/src/main/res/layout/activity_rv_detail.xml" value="0.15307971014492755" />
         <entry key="..\:/Users/Matthieu/Desktop/FirstTest/app/src/main/res/layout/activity_second.xml" value="0.1" />
         <entry key="..\:/Users/Matthieu/Desktop/FirstTest/app/src/main/res/layout/activity_third.xml" value="0.1" />
         <entry key="..\:/Users/Matthieu/Desktop/FirstTest/app/src/main/res/layout/first_app_toolbar.xml" value="0.1" />
+        <entry key="..\:/Users/Matthieu/Desktop/FirstTest/app/src/main/res/layout/fragment_live_data.xml" value="0.11639492753623189" />
+        <entry key="..\:/Users/Matthieu/Desktop/FirstTest/app/src/main/res/layout/fragment_live_data_bottom.xml" value="0.11639492753623189" />
         <entry key="..\:/Users/Matthieu/Desktop/FirstTest/app/src/main/res/layout/rv_book_item.xml" value="0.1" />
         <entry key="..\:/Users/Matthieu/Desktop/FirstTest/app/src/main/res/layout/rv_item.xml" value="0.12409420289855072" />
         <entry key="..\:/Users/Matthieu/Desktop/FirstTest/app/src/main/res/layout/settings_activity.xml" value="0.1" />
